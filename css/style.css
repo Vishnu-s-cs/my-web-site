@@ -914,7 +914,7 @@ a.move-top span{
 }
 @media(max-width:600px) {
 	.quote {
-		background: url(../images/banner.jpg) center;
+		/* background: url(../images/banner.jpg) center; */
 		background-size: cover;
 	}
 }
