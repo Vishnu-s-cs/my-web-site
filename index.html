@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <title>Vishnu</title>
 <link rel="icon" href="https://media.giphy.com/media/JQSJYOFoCKT2h3b5sI/giphy.gif" type="image/gifsizes=16x16">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -156,7 +157,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 					<img src="images/s1.png" alt="" class="img-fluid" />
 					<h3>01</h3>
 					<h4 class="mt-3">Web Development</h4>
-					<p class="mt-3">Specialiced in web Development including html,javascript,css,php,nodejs</p>
+					<p class="mt-3">Specialiced in web Development including MERN stack</p>
 				  </div>
 				</div>
 			</div>
@@ -166,7 +167,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 					<img src="images/s2.png" alt="" class="img-fluid" />
 					<h3>02</h3>
 					<h4 class="mt-3">App Developer</h4>
-					<p class="mt-3">Knowledge in c,c++,Java,Python etc..</p>
+					<p class="mt-3">Knowledge in c,c++,Java,Python,javascript etc..</p>
 				  </div>
 				</div>
 			</div>
@@ -176,7 +177,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 					<img src="images/s3.png" alt="" class="img-fluid" />
 					<h3>03</h3>
 					<h4 class="mt-3">Database management</h4>
-					<p class="mt-3">Experience in many kinds of dbms software such as mysql,sql server etc...</p>
+					<p class="mt-3">Experience in many kinds of dbms software such as mongoDB and mySQL</p>
 				  </div>
 				</div>
 			</div>
@@ -186,7 +187,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 					<img src="images/s4.png" alt="" class="img-fluid" />
 					<h3>04</h3>
 					<h4 class="mt-3">Git</h4>
-					<p class="mt-3">git bash management and experience in github and git lab</p>
+					<p class="mt-3">git bash management and experience with github and git lab</p>
 				  </div>
 				</div>
 			</div>
@@ -200,11 +201,18 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 	<div class="container py-3">
 		<p class="paragraph">Qualification</p>
 		<h3 class="heading mb-sm-5 mb-4">My qualification</h3>
-		<div class="middile-inner-con">
+		<div class="middile-inner-con"style="
+		list-style: none;
+	">
 			<div class="tab-main mx-auto">
 
 				<input id="tab1" type="radio" name="tabs" checked>
-				<li class="display-3"><a href="https://www.uitalleppey.org/" style="text-decoration: none;"><i class="fa fa-university"></i></a>UIT Alappuzha Bsc CS</li>
+				<li class="display-3"><a href="https://www.uitalleppey.org/" style="text-decoration: none;"><i class="fa fa-search"style="
+					color: black;
+				"></i></a>Brocamp Kochi : self research</li>
+				<li class="display-3"><a href="https://www.uitalleppey.org/" style="text-decoration: none;"><i class="fa fa-university"style="
+					color: black;
+				"></i></a>UIT Alappuzha Bsc CS</li>
 
 				<input id="tab2" type="radio" name="tabs">
 				<li class="display-3"><i class="fa fa-book"></i>SDVHSS +2 CS</li>
@@ -228,8 +236,8 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 	<div class="container py-lg-5">
 		<div class="row">
 			<div class="col-lg-8"s>
-				<h4>I am a student studying in University Alappuzha.<br>I am a tech enthusiast.I like to buid softwares and develop web.<br>My next venture is to study Artificial Intelligence,IOT,Quantum computing etc..</h4>
-				<h5>designer - developer - freelancer</h5>
+				<h4>I am a intern working at brocamp.<br>I am a tech enthusiast.I like to buid softwares and develop web.<br>My next venture is to become a pro mern stack developrer and got placed.</h4>
+				<h5>web dev</h5>
 				
 			</div>
 		</div>
@@ -272,7 +280,33 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 		<li class="Whatsapp display-1 p-2" style="display: inline;"><a href="https://t.me/vishnu1s"><span class="fa fa-telegram" display-1></span></a></li>
 		<li class="email display-1 p-2" style="display: inline;"><a href="mailto:vishnuvichuz198@gmail.com"><span class="fa fa-envelope" display-1></span></a></li>
 	</ul>			
-					
+					<section class="form">
+						<div class="container">
+							<form id="submit-form">
+							  <label for="fname">First Name</label>
+							  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+						  
+							  <label for="lname">Last Name</label>
+							  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+							  <label for="email">Email</label>
+							  <input type="text" id="lname" name="email" placeholder="Your Email..">
+							  <label for="country">Country</label>
+							  <select id="country" name="country">
+								<option value="india">India</option>
+								<option value="australia">Australia</option>
+								<option value="canada">Canada</option>
+								<option value="usa">USA</option>
+							  </select>
+						  
+							  <label for="subject">Subject</label>
+							  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+						  
+							  <input type="submit" value="Submit" style="
+							  background: #5d5d8e;
+						  ">
+							</form>
+						  </div>
+					</section>
 				
 				<section class="w3layouts-map col-lg-4 mt-lg-0 mt-5">
 					<iframe width="600" height="450" frameborder="0" style="border:0"
@@ -330,6 +364,25 @@ src="images/Screenshot_20210122-232904~2.png" allowfullscreen></iframe>
 	</a>
 </div>
 <!-- move top -->
+<script>
+	$("#submit-form").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbyC3EHGm9upjIwleiuHTymhgnLZDzqR9Zj7XU471sbtg35BjppijgYC86cTVIWSllMa/exec",
+			data:$("#submit-form").serialize(),
+			method:"post",
+			success:function (response){
+				alert("Form submitted successfully")
+				window.location.reload()
+				//window.location.href="https://google.com"
+			},
+			error:function (err){
+				alert("Something Error")
+
+			}
+		})
+	})
+</script>
 
 </body>
 </html>
