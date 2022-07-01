@@ -1110,3 +1110,9 @@ input[type=text], select, textarea {
     background-color: #f2f2f2;
     padding: 20px;
   }
+  .error{
+    width: 100%;
+    color: red;
+    font-size: 14px;
+    font-weight: 700;
+  }

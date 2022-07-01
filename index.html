@@ -297,6 +297,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
 						  
 							  <label for="subject">Subject</label>
 							  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+							  <label for="" id="error" class="error"></label>
 						  
 							  <input type="submit" value="Submit" style="
 							  background: #5d5d8e;
@@ -362,8 +363,30 @@ src="images/Screenshot_20210122-232904~2.png" allowfullscreen></iframe>
 </div>
 <!-- move top -->
 <script>
+	const fname = document.getElementById('fname')
+	const lname = document.getElementById('lname')
+	const email = document.getElementById('email')
+	const phone = document.getElementById('number')
+	const subject = document.getElementById('subject')
+	const nullError= document.getElementById('error')
 	$("#submit-form").submit((e)=>{
-		e.preventDefault()
+		let flag=0
+		let fv=fname.value;
+		console.log(fname.value);
+		if (fname.value=== ' '||lname.value=== ' '||email.value=== ' '||number.value=== ' '||subject.value=== ' ') {
+			
+			e.preventDefault()
+		
+		}
+		else if (fname.value=== ''||lname.value=== ''||email.value=== ''||number.value=== ''||subject.value=== '') {
+			
+	
+			nullError.innerHTML = "You probably missed a field"
+			e.preventDefault()
+		
+		}
+		
+		else{
 		$.ajax({
 			url:"https://script.google.com/macros/s/AKfycbyC3EHGm9upjIwleiuHTymhgnLZDzqR9Zj7XU471sbtg35BjppijgYC86cTVIWSllMa/exec",
 			data:$("#submit-form").serialize(),
@@ -377,9 +400,11 @@ src="images/Screenshot_20210122-232904~2.png" allowfullscreen></iframe>
 				alert("Something Error")
 
 			}
-		})
+		})}
 	})
 </script>
-
+<script src="./jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+<script src="./custom.js"></script>
 </body>
 </html>
