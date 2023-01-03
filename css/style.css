@@ -226,7 +226,7 @@ height: 100% !important;
 
 
 .bnr-txt-w3pvt {
-    margin: 12em 0 9em;}
+    margin: 4rem 0 12em;}
 .banner-w3pvt:before {
 	content: '';
 	position: absolute;
@@ -259,7 +259,9 @@ height: 100% !important;
     position: relative;
     text-transform: capitalize;
 }
-
+#home{
+ height: 100vh;
+}
 .bnr-w3pvt-txt h6:after {
     position: absolute;
     content: '';
