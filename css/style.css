@@ -10,6 +10,7 @@ body {
     font-size: 100%;
     background: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
 }
 
 body a {
