@@ -374,7 +374,7 @@
 				</ul>
 				<section class="form">
 					<div class="container row">
-						<form id="submit-form">
+						<form action="https://formsubmit.co/vishnuvichuz198@gmail.com" method="POST">
 							<label for="fname">First Name</label>
 							<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -382,10 +382,10 @@
 							<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 							<label for="email">Email</label>
 							<input type="email" id="email" name="email" placeholder="Your Email.."
-								class="p-2 col-sm-12 mb-2" style="border-color: grey;border-radius:5px">
+								class="p-2 col-sm-12 mb-2" style="border: 1px solid #ccc;border-radius: 5px; height: 3.2rem;">
 							<label for="number">Phone no.</label>
 							<input type="number" id="number" name="number" placeholder="Your Phone no..."
-								class="p-2 col-sm-12 mb-2" style="border-color: grey;border-radius:5px">
+								class="p-2 col-sm-12 mb-2" style="border: 1px solid #ccc;border-radius: 5px;height: 3.2rem;">
 							<label for="country">Country</label>
 							<select id="country" name="country">
 								<option value="india">India</option>
@@ -396,7 +396,7 @@
 
 							<label for="subject">Subject</label>
 							<textarea id="subject" name="subject" placeholder="Write something.."
-								style="height:200px"></textarea>
+								style="max-height:200px;min-height: 200px;" maxlength="50"></textarea>
 							<label for="" id="error" class="error"></label>
 
 							<input type="submit" value="Submit" style="
@@ -471,48 +471,7 @@
 		</a>
 	</div>
 	<!-- move top -->
-	<script>
-		const fname = document.getElementById('fname')
-		const lname = document.getElementById('lname')
-		const email = document.getElementById('email')
-		const phone = document.getElementById('number')
-		const subject = document.getElementById('subject')
-		const nullError = document.getElementById('error')
-		$("#submit-form").submit((e) => {
-			let flag = 0
-			let fv = fname.value;
-			console.log(fname.value);
-			if (fname.value === ' ' || lname.value === ' ' || email.value === ' ' || number.value === ' ' || subject.value === ' ') {
-
-				e.preventDefault()
-
-			}
-			else if (fname.value === '' || lname.value === '' || email.value === '' || number.value === '' || subject.value === '') {
-
-
-				nullError.innerHTML = "You probably missed a field"
-				e.preventDefault()
-
-			}
-
-			else {
-				$.ajax({
-					url: "https://script.google.com/macros/s/AKfycbyC3EHGm9upjIwleiuHTymhgnLZDzqR9Zj7XU471sbtg35BjppijgYC86cTVIWSllMa/exec",
-					data: $("#submit-form").serialize(),
-					method: "post",
-					success: function (response) {
-						alert("Form submitted successfully")
-						window.location.reload()
-						//window.location.href="https://google.com"
-					},
-					error: function (err) {
-						alert("Something Error")
-
-					}
-				})
-			}
-		})
-	</script>
+	
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	<script src="./jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
